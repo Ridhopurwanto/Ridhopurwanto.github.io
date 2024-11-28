@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slideBar.css">
+</head>
+<body>
+    <div class="barCon">
+        <div class="nav">1/3</div>
+        <div class="time">00.00</div>
+    </div>
+    <div class="container">
+        <div class="main">
+            <p>Tes Ganjil Genap</p>
+                <div class="control">
+                    <div class="label">Waktu</div>
+                    <div class="range">
+                        <input type="range" min="1" max="100" class="input">
+                    </div>
+                    <div class="bil">0</div>
+                </div>
+                <div class="control">
+                    <div class="label">Soal</div>
+                    <div class="range">
+                        <input type="range" min="1" max="100" class="input">
+                    </div>
+                    <div class="bil">0</div>
+                </div>
+                <div class="control">
+                    <div class="label">Set</div>
+                    <div class="range">
+                        <input type="range" min="1" max="10" class="input">
+                    </div>
+                    <div class="bil">0</div>
+                </div>
+                <div class="butCon">
+                    <button>
+                        <img src="spin.svg">
+                        <p>Mulai</p>
+                    </button>
+                </div>
+        </div>
+        <div class="section hasil">
+            <p>Hasil</p>
+            <div class="boxCon"></div>
+            <form>
+                <button type="submit">Mulai lagi</button>
+            </form>
+        </div>    
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

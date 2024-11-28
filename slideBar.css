@@ -1,0 +1,205 @@
+.main {
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+	top: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main p {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.control{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    height : 40px;
+    justify-content: center;
+}
+
+.label{
+    border: 2px solid #14213d;
+    font-size: 20px;
+    height: 100%;
+    width: 120px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.main .bil {
+    border: 2px solid #14213d;
+    font-size: 20px;
+    height: 100%;
+    width: 100px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: -40px;
+}
+
+.main button {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    font-size: 20px;
+    background-color: #FCA311;
+    padding: 7px 20px;
+    width: fit-content;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main button p {
+	margin: 0;
+	color: black;
+}
+.main button img {
+	height: 30px;
+	position: absolute;
+	display: none;
+}
+
+.main button:hover{
+    filter: brightness(0.95);
+}
+
+.main .butCon{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+
+.range {
+	background: #14213d;
+	height: 100%;
+	width: 40%;
+	border-radius: 5rem;
+	box-shadow: 1px 5px 5px rgba(black, 0.3);
+    text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    margin-left: -35px;
+    z-index: 1;
+}
+
+.input {
+	-webkit-appearance: none;
+	width: 80%;
+	height: 100%;
+	background: transparent;
+
+	&:focus {
+		outline: none;
+	}
+
+/* WEBKIT */
+	&::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		height: 16px;
+		width: 16px;
+		border-radius: 50%;
+		background: white;
+        ;
+		margin-top: -5px;
+		box-shadow: 1px 1px 2px rgba(#000, 0.5);
+
+		cursor: pointer;
+		
+	}
+
+	&::-webkit-slider-runnable-track {
+		width: 60%;
+		height: 9px;
+		background: gainsboro;
+		border-radius: 3rem;
+
+		transition: all 0.5s;
+		cursor: pointer;
+	}
+
+	&:hover::-webkit-slider-runnable-track {
+		background: #FCA311;
+	}
+
+/* IE */
+
+	&::-ms-track {
+		width: 60%;
+		cursor: pointer;
+		height: 9px;
+
+		transition: all 0.5s;
+		/* Hides the slider so custom styles can be added */
+		background: transparent;
+		border-color: transparent;
+		color: transparent;
+	}
+
+	&::-ms-thumb {
+		height: 16px;
+		width: 16px;
+		border-radius: 50%;
+		background: #ffffff;
+		margin-top: -5px;
+		box-shadow: 1px 1px 2px rgba(#000, 0.5);
+
+		cursor: pointer;
+	}
+
+	&::-ms-fill-lower {
+		background: #bdbdbd;
+		border-radius: 3rem;
+	}
+	&:focus::-ms-fill-lower {
+		background: #ff6e40;
+	}
+	&::-ms-fill-upper {
+		background: #bdbdbd;
+		border-radius: 3rem;
+	}
+	&:focus::-ms-fill-upper {
+		background: #ff6e40;
+	}
+
+/* FIREFOX */
+	&::-moz-range-thumb {
+		height: 16px;
+		width: 16px;
+		border-radius: 50%;
+		background: #ffffff;
+		margin-top: -5px;
+		box-shadow: 1px 1px 2px rgba(#000, 0.5);
+
+		cursor: pointer;
+	}
+
+	&::-moz-range-track {
+		width: 60%;
+		height: 9px;
+		background: #bdbdbd;
+		border-radius: 3rem;
+
+		transition: all 0.5s;
+		cursor: pointer;
+	}
+	&:hover::-moz-range-track {
+		background: #ff6e40;
+	}
+}
